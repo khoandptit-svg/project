@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background color</title>
+    <style>
+        #div1{
+            width: 300px; /* chiều rộng của phần tử */
+            height: 120px; /* chiều cao của phần tử */
+            background-color: red; /* màu nền của phần tử */
+            opacity: 0.5; /* độ mờ của phần tử, giá trị từ 0 đến 1, 0 là trong suốt, 1 là không trong suốt */
+        }
+        #div2{
+            width: 300px; /* chiều rộng của phần tử */
+            height: 120px; /* chiều cao của phần tử */
+            background-color: rgba(0,0,255,0.3); /* màu nền của phần tử, rgba cho phép chỉ định màu sắc và độ mờ, giá trị từ 0 đến 255 cho màu sắc và từ 0 đến 1 cho độ mờ */
+        }    
+        #div3{
+            width: 900px; 
+            height: 620px; 
+            background-image : url(./img/bg1.jpg); /* hình nền của phần tử, có thể dùng url để chỉ định đường dẫn đến hình ảnh */
+            background-repeat : no-repeat; /* không lặp lại hình nền */
+            background-position: top right; /* vị trí của hình nền, có thể dùng top, bottom, left, right, center hoặc kết hợp các giá trị này */
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        Thẻ div
+    </div>
+    <div id="div2">
+        Thẻ div2
+    </div>
+    <div id="div3">
+        Thẻ div3
+</body>
+</html>

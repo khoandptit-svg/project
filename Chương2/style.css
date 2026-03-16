@@ -1,0 +1,19 @@
+body{
+    background-color: #fff8dc;
+    font-family: "Segoe UI",sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1{
+    color: darkblue;
+    text-align: center;
+    background-color: #ffe4b5;
+    padding : 15px;
+    border-radius : 8px;
+}
+
+p{
+    margin: 20px;
+    font-size: 18px;
+}
