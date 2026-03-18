@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sức mạnh js</title>
+</head>
+<body>
+    <p id="test">Chào mừng bạn đến với zent code school <a href="hihi">Hihi</a></p>
+    <script>
+        var test = document.getElementById("test").innerHTML;
+        console.log(test);
+        // document.getElementById("test").innerHTML = "Giá trị thay đổi";
+
+        var innerText = document.getElementById("test").innerText;
+        console.log(innerText);
+
+        document.getElementById("test").innerText = '<b> Gán giá trị </b>';
+        console.log(document.getElementById("test").innerText);
+        
+    </script>
+    
+</body>
+</html>
