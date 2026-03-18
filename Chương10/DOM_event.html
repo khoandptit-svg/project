@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sức mạnh của js</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <p onclick="show()"> click me </p>
+    <button>Click to zent</button>
+    <script>
+        function show(){
+            alert("Đã gọi hàm show");
+        }
+        var button = document.getElementsByTagName("button")[0];
+        button.addEventListener('click',function(){
+            var p = document.getElementsByTagName('p')[0];
+            p.style.color = 'red';
+    });
+       
+    </script>
+    
+</body>
+</html>

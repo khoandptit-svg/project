@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello js</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <p id = "test">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, maiores!</p>
+    <input id="input_text" type = "text">
+    <select id = "test2">
+        <option value ="1">HN</option>
+        <option value ="2">HN2</option>
+        <option value ="3">HN3</option>
+        <option value ="4">HN4</option>
+    </select>
+
+    <form id="form">
+        Họ tên <input type="text">
+        <input type="submit" value="Lưu">
+    </form>
+
+    <script>
+        var p = document.getElementById('test');
+        p.addEventListener("mouseover",function(){
+            p.style.color = "red"
+        })
+            p.addEventListener("mouseout",function(){
+            p.style.color = "black"
+        })
+        var input_text = document.getElementById('input_text');
+        input_text.addEventListener('blur',function(){
+            input_text.style.backgroundColor = "red";
+        })
+        input_text.addEventListener('focus',function(){
+            input_text.style.backgroundColor = "yellow";
+        })
+        var test2 = document.getElementById("test2");
+        test2.addEventListener('change', function(){
+            alert("Đã thay đổi");
+        })
+
+        var form = document.getElementById("form");
+        form.addEventListener('submit',function(){
+            alert("Bạn vừa submit")
+        })
+    </script>
+
+
+    
+</body>
+</html>
+
+
+
+
