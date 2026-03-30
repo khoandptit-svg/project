@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="frm">
+        <input type="radio" name="gender" value="Nam">Nam
+        <input type="radio" name="gender" value="Nữ">Nữ
+        <input id="btn" type="button" value="Test">
+
+        <select name="city" id ="">
+            <option id ="hn">Ha Noi </option>
+            <option id ="hp">Hai Phong </option>
+            <option id ="vinh">Vinh </option>
+        </select>
+        <input id="btn-select" type="button" value="Select">
+
+    </form>
+    <script>
+        var btn = document.getElementById('btn');
+        btn.addEventListener('click',function() {
+            for (var i = 0 ; i<2 ; i++) {
+                if(document.frm.gender[i].checked==true){
+                    alert(document.frm.gender[i].value)
+                }
+            } 
+        })
+
+        var btn_select = document.getElementById('btn-select');
+        btn_select.addEventListener('click', function(){
+            var index_selected = document.frm.city.selectedIndex;
+            alert(document.frm.city[index_selected].value)
+        })
+
+    </script>
+</body>
+</html>
