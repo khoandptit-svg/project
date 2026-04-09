@@ -1,0 +1,67 @@
+<!-- <table> : dùng để tạo bảng(thẻ lớn nhất bao quanh tất cả các thẻ khác)
+    <tr> : dùng để định nghĩa một hàng trong bảng
+    <th> : dùng để định nghĩa một ô tiêu đề bên trong bảng . Thẻ này đc dùng để định nghĩa tiêu đề của bảng vì nó mặc định đc in đậm và căn giữa
+    <td> : dùng để định nghĩa một ô bên trong hàng -->
+
+<!-- THUỘC TÍNH CỦA THẺ TABLE
+    width : độ rộng của bảng đơn vị thường dùng là px hoặc %
+    height : chiều cao của bảng đơn vị thường dùng là px hoặc %
+    border : độ rộng của đường viền , đơn vị là px hoặc %
+    align : vị trí hiển thị của bảng so với văn bản , có 3 giá trị : left , right , center
+    bgcolor: màu nền bảng 
+    cellpadding: khoảng cách chữ trong một ô so với viền của nó
+    cellspacing: độ dày viền của các ô
+
+
+    THUỘC TÍNH CỦA THẺ TR
+    height : chiều cao hàng
+    bgcolor : mùa nền hàng
+    align : ví trí có nội dung trong các ô trên dòng theo chiều ngang : left,center, right , justify(căn đều)
+    valign : vị trí có nội dung trong các ô trên theo dòng theo chiều dọc : top,middle, bottom 
+
+    THUỘC TÍNH CỦA THẺ TD và TH
+    height : chiều cao ô
+    width : độ rộng của ô
+    bgcolor : màu nền của ô
+    align : vị trí của nội dung các ô trên dòng theo chiều ngang :left,center,right,justify(căn đều)
+    valign :vị trí của nd trong các ô trên dòng theo chiều dọc : top , middle(giữa theo chiều dọc),bottom
+    colspan : gộp các cột trong một dòng
+    rowspan : gộp các dòng trong một cột
+-->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo bảng trong HTML</title>
+</head>
+<body>
+    <table width="300px" height="100px" border="1px" bordercolor="red" align="center" bgcolor="yellow">
+        <tr height="80px" bgcolor="pink" valign="middle" > 
+            <th>STT</th>
+            <th>Họ tên</th>
+            <th>Năm sinh</th>
+            <th>Quê quán</th>
+        </tr>
+
+        <tr align="right">
+            <td>1</td>
+            <td>Nguyễn Văn An</td>
+            <td>1997</td>
+            <td>Nghệ An</td>
+        </tr> 
+
+        <tr>
+            <td bgcolor="red" >2</td>
+            <td width="200px" height="50px" valign="top" align="right">Trần Thị Sen</td>
+            <td>1999</td>
+            <td>Hà Nội</td>
+        </tr>
+    </table>
+    
+</body>
+</html>

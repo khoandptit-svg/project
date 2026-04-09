@@ -1,0 +1,79 @@
+<!-- 
+form là biểu mẫu trên trang HTML đc dùng để thu thập thông tin đầu vào của người dùng.Đầu vào này thường đc gửi đến máy chủ để xử lý
+
+tác dụng : định nghĩa một biểu mẫu (form)
+
+THUỘC TÍNH CỦA THẺ FORM
++ name: tên của form
++ action : hướng xử lý dữ liệu đường dẫn đến trang xử lý 
++ method : phương thức xử lý dữ liệu GET, POST, PUT,..
+
+THẺ <INPUT>
++ type : quy định liểu hiển thị của thủ input: text, checkbox,radio,file,submit...
++ name : tên của đối tượng
++ value : giá trị của đối tượng
++ placeholder : văn bản hiển thị trong ô input khi chưa nhập gì
++ select : thuộc tính của thẻ option, dùng để chọn mặc định một giá trị trong select
++ textarea : thẻ dùng để tạo một ô nhập liệu dạng văn bản dài, có thể chứa nhiều dòng, thuộc tính cols(rộng) và rows(cao) để xác định kích thước của ô nhập liệu
++ label : thẻ dùng để tạo nhãn cho các phần tử form, giúp người dùng
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+<body>
+    <form action="">
+        <!-- thẻ text,password,submit-->
+        <input type="text" name="ho_ten" placeholder="Mời nhập tên">
+        <input type="password" placeholder="Nhập password">
+        <input type="submit">
+        <br>
+
+        <!--Thẻ radio và label--> <!-- <label for="male">Nam</label>  dùng để tích vào Nam là đc ko nhất thiết ô tròn-->
+        <input id="male" name="gender" type="radio"><label for="male">Nam</label>
+        <input id="female" name="gender" type="radio"><label for="female">Nữ</label>
+        <input id="other" name="gender" type="radio"><label for="other">Khác</label>
+        <br>
+
+        <!--Thẻ checkbox-->
+        <input type="checkbox">Web front end
+        <input type="checkbox">Node js
+        <input type="checkbox">PHP
+        <br>
+
+        <!--Thẻ file-->
+        <input type="file">
+        <br>
+
+        <!--Thẻ date-->
+        <input type="date">
+        <br>
+
+        <!--Thẻ select , option-->
+        <select name="" id="" >
+            <option value="">Hà Nội</option>
+            <option value="">Hồ Chí Minh</option>
+            <option value="">Huế</option>
+            <option value="">Hải Phòng</option>
+        </select>
+        <br>
+
+        <!--Thẻ textarea-->
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+    
+
+
+        
+
+
+    </form>
+    
+    
+
+</body>
+</html>
